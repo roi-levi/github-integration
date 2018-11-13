@@ -35,7 +35,7 @@ namespace UnitTestProject1
             eyes.ApiKey = Environment.GetEnvironmentVariable("APPLITOOLS_API_KEY");
 
             // obtain the ID from the environment variables - the name should be specified as null
-            var batchName = string.Empty;
+            var batchName = Environment.GetEnvironmentVariable("APPLITOOLS_BATCH_ID");
             var batchId = Environment.GetEnvironmentVariable("APPLITOOLS_BATCH_ID");
 
             // set the batch
