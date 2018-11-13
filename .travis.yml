@@ -2,8 +2,8 @@ language: csharp
 mono: none
 dotnet: 2.0.0
 
-
 install:
+ - nuget restore GitHubIntegration.sln
  - dotnet restore
 
 script:
