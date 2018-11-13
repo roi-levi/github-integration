@@ -6,5 +6,7 @@ install:
  - dotnet restore
 
 script:
+ - export APPLITOOLS_API_KEY=`echo 83w3A7NwCwRhYaPza57flqgyS107H109110QOxC769u5HFlHU110`
+ - export APPLITOOLS_BATCH_ID=`echo ${TRAVIS_PULL_REQUEST_SHA:=$TRAVIS_COMMIT}`
  - dotnet build
  - dotnet test UnitTestProject1/UnitTestProject1.csproj
