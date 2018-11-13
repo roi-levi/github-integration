@@ -51,10 +51,10 @@ namespace UnitTestProject1
             var viewportSizeLandscape = new Size(/*width*/1024, /*height*/ 768);
 
             IWebDriver innerDriver;
-            DesiredCapabilities caps = DesiredCapabilities.Chrome();
+            var caps = new DesiredCapabilities();
+            caps.SetCapability("browserName", "Chrome");
             caps.SetCapability("platform", "Windows 10");
-            caps.SetCapability("version", "70.0");
-            caps.SetCapability("screenResolution", "1024x768");
+            caps.SetCapability("version", "65.0");
             var remoteUrl = $"{SauceLabsAccessKey}";
             innerDriver = new RemoteWebDriver(new Uri($"http://{SauceLabsUsername}:{SauceLabsAccessKey}@ondemand.saucelabs.com:80/wd/hub"), caps);
 
@@ -72,11 +72,13 @@ namespace UnitTestProject1
                 eyes.CheckWindow("After Click");                       // Visual checkpoint 3
 
                 result = eyes.Close(false);     //false means don't thow exception for failed tests
-                innerDriver.Quit();
+                
                 HandleResult(result);
             }
             finally
             {
+                innerDriver.Quit();
+
                 eyes.AbortIfNotClosed();
             }
 
