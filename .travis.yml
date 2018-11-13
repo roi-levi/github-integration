@@ -3,7 +3,7 @@ mono: none
 dotnet: 2.0.0
 
 install:
- - dotnet restore 
+ - dotnet restore
 
 script:
  - export APPLITOOLS_BATCH_ID=`echo ${TRAVIS_PULL_REQUEST_SHA:=$TRAVIS_COMMIT}`
