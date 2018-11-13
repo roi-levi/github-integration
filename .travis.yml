@@ -1,11 +1,12 @@
 language: csharp
-mono: none
-dotnet: 2.0.0
+solution: MergeDemo.sln
 
 install:
- - dotnet restore 
+  - nuget restore MergeDemo.sln
+  - nuget install NUnit.Runners -Version 3.8.0 -OutputDirectory testrunner
 
 script:
- - export APPLITOOLS_BATCH_ID=`echo ${TRAVIS_PULL_REQUEST_SHA:=$TRAVIS_COMMIT}`
- - dotnet build
- - dotnet test UnitTestProject1/UnitTestProject1.csproj
+  - export APPLITOOLS_BATCH_ID=`echo ${TRAVIS_PULL_REQUEST_SHA:=$TRAVIS_COMMIT}`
+  - echo $APPLITOOLS_BATCH_ID
+  - msbuild /p:Configuration=Release MergeDemo.sln
+  - mono ./testrunner/NUnit.ConsoleRunner.3.8.0/tools/nunit3-console.exe ./bin/Release/MergeDemo.dll
