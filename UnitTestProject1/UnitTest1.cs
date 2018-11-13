@@ -2,7 +2,7 @@ using Applitools;
 using Applitools.Selenium;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Remote;
 using System;
 using System.Drawing;
 
@@ -45,8 +45,18 @@ namespace UnitTestProject1
             };
             eyes.Batch = batchInfo;
 
+            var SauceLabsAccessKey = Environment.GetEnvironmentVariable("SauceLabsAccessKey");
+            var SauceLabsUsername = Environment.GetEnvironmentVariable("SauceLabsUsername");
+
             var viewportSizeLandscape = new Size(/*width*/1024, /*height*/ 768);
-            IWebDriver innerDriver = new ChromeDriver();
+
+            IWebDriver innerDriver;
+            DesiredCapabilities caps = DesiredCapabilities.Chrome();
+            caps.SetCapability("platform", "Windows 10");
+            caps.SetCapability("version", "70.0");
+            caps.SetCapability("screenResolution", "1024x768");
+            var remoteUrl = $"{SauceLabsAccessKey}";
+            innerDriver = new RemoteWebDriver(new Uri($"http://{SauceLabsUsername}:{SauceLabsAccessKey}@ondemand.saucelabs.com:80/wd/hub"), caps);
 
             TestResults result = null;
             IWebDriver driver = eyes.Open(innerDriver, appName, testName, viewportSizeLandscape);
