@@ -15,7 +15,7 @@
         public void TestHelloWorld(int width, int height)
         {
             var eyes = new Eyes(new Uri(@"http://7fe5025d.ngrok.io"));
-            var driver = GetWebDriver();
+            var driver = GetWebDriver(); 
             
             try
             {
