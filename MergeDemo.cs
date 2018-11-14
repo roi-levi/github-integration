@@ -16,7 +16,6 @@
         {
             var eyes = new Eyes(new Uri(@"https://24dd76cc.ngrok.io"));
             var driver = GetWebDriver();
-            
 
             try
             {
