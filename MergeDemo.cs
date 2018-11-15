@@ -10,7 +10,7 @@
     [TestFixture]
     public class MergeDemo
     {
-        [TestCase(600, 800)]
+        //[TestCase(600, 800)]
         //[TestCase(1024, 768)]
         public void TestHelloWorld(int width, int height)
         {
