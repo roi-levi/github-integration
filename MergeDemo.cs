@@ -16,7 +16,7 @@
         {
             var eyes = new Eyes(new Uri(@"https://e22be1bc.ngrok.io"));
             var driver = GetWebDriver();
-
+            
             try
             {
                 // Start the test and set the browser's viewport size
