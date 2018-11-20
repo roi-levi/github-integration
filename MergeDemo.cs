@@ -25,7 +25,7 @@
                 // Navigate the browser to the "hello world!" web-site.
                 driver.Url = "https://applitools.com/helloworld?diff1";
 
-                // Visual checkpoint #1.
+                // Visual checkpoint #1. 
                 eyes.CheckWindow("Hello!"); 
 
                 // Click the "Click me!" button. 
