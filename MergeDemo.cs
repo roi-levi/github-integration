@@ -10,8 +10,8 @@
     [TestFixture]
     public class MergeDemo
     {
-        [TestCase(600, 800)]
-        //[TestCase(1024, 768)]
+        //[TestCase(600, 800)]
+        [TestCase(1024, 768)]
         public void TestHelloWorld(int width, int height)
         {
             var eyes = new Eyes(new Uri(@"https://f31a9de8.ngrok.io"));
