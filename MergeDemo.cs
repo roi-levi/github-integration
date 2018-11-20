@@ -32,7 +32,7 @@
                 //driver.FindElement(By.TagName("button")).Click();
 
                 // Visual checkpoint #2.
-                eyes.CheckWindow("Click!");
+                eyes.CheckWindow("Click!"); 
 
                 // End the test.
                 eyes.Close(false);
