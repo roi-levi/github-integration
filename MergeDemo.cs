@@ -29,7 +29,7 @@
                 eyes.CheckWindow("Hello!");
 
                 // Click the "Click me!" button.
-                driver.FindElement(By.TagName("button")).Click();
+                //driver.FindElement(By.TagName("button")).Click();
 
                 // Visual checkpoint #2.
                 eyes.CheckWindow("Click!");
