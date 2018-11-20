@@ -26,7 +26,7 @@
                 driver.Url = "https://applitools.com/helloworld?diff1";
 
                 // Visual checkpoint #1.
-                eyes.CheckWindow("Hello!");
+                eyes.CheckWindow("Hello!"); 
 
                 // Click the "Click me!" button. 
                 //driver.FindElement(By.TagName("button")).Click();
