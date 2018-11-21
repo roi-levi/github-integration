@@ -18,7 +18,7 @@
             var driver = GetWebDriver();
              
             try
-            { 
+            {
                 // Start the test and set the browser's viewport size
                 eyes.Open(driver, "Hello World!", "My first Selenium C# test!", new Size(width, height));
 
