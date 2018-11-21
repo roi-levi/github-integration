@@ -14,7 +14,7 @@
         [TestCase(1024, 768)]
         public void TestHelloWorld(int width, int height)
         {
-            var eyes = new Eyes(new Uri(@"https://12519e67.ngrok.io"));
+            var eyes = new Eyes(new Uri(@"https://2378c4e2.ngrok.io"));
             var driver = GetWebDriver();
              
             try
