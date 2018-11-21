@@ -17,7 +17,7 @@
             var eyes = new Eyes(new Uri(@"https://2378c4e2.ngrok.io"));
             var driver = GetWebDriver();
              
-            try
+            try 
             {
                 // Start the test and set the browser's viewport size
                 eyes.Open(driver, "Hello World!", "My first Selenium C# test!", new Size(width, height));
