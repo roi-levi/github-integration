@@ -14,7 +14,7 @@
         [TestCase(1024, 768)]
         public void TestHelloWorld(int width, int height)
         {
-            var eyes = new Eyes(new Uri(@"https://f31a9de8.ngrok.io"));
+            var eyes = new Eyes(new Uri(@"https://12519e67.ngrok.io"));
             var driver = GetWebDriver();
              
             try
@@ -40,7 +40,7 @@
             finally
             {
                 // Close the browser.
-                driver.Quit();
+                driver.Quit(); 
 
                 // If the test was aborted before eyes. Close was called, ends the test as aborted.
                 eyes.AbortIfNotClosed();
