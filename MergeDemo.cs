@@ -16,7 +16,7 @@
         {
             //var eyes = new Eyes(new Uri(@"https://roiscripteyes.applitools.com"));
             var eyes = new Eyes(new Uri(@"https://21e2b2b4.ngrok.io"));
-         
+        
             var driver = GetWebDriver();
              
             try 
