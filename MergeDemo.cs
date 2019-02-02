@@ -17,7 +17,7 @@
             //var eyes = new Eyes(new Uri(@"https://roiscripteyes.applitools.com"));
             var eyes = new Eyes(new Uri(@"https://7d61d36b.ngrok.io"));
         
-            var driver = GetWebDriver();
+            var driver = GetWebDriver(); 
               
             try 
             {
