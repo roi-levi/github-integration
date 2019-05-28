@@ -41,7 +41,7 @@
             }
             finally
             {
-                // Close the browser.
+                // Close the browser. 
                 driver.Quit(); 
 
                 // If the test was aborted before eyes. Close was called, ends the test as aborted.
