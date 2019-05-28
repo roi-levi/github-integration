@@ -33,7 +33,7 @@
                 // Click the "Click me!" button.    
                 driver.FindElement(By.TagName("button")).Click();
 
-                // Visual checkpoint #2.
+                // Visual checkpoint #2.   
                 eyes.CheckWindow("Click!"); 
                  
                 // End the test.   
