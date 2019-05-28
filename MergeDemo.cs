@@ -15,7 +15,7 @@
         public void TestHelloWorld(int width, int height)
         {
             //var eyes = new Eyes(new Uri(@"https://roiscripteyes.applitools.com"));
-            var eyes = new Eyes(new Uri(@"https://7d61d36b.ngrok.io"));
+            var eyes = new Eyes(new Uri(@"https://35902adf.ngrok.io"));
         
             var driver = GetWebDriver();
               
