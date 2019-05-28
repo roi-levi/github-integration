@@ -36,7 +36,7 @@
                 // Visual checkpoint #2.
                 eyes.CheckWindow("Click!"); 
                  
-                // End the test.
+                // End the test.   
                 eyes.Close(false);
             }
             finally
