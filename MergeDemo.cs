@@ -30,7 +30,7 @@
                 // Visual checkpoint #1.
                 eyes.CheckWindow("Hello!"); 
 
-                // Click the "Click me!" button. 
+                // Click the "Click me!" button.    
                 driver.FindElement(By.TagName("button")).Click();
 
                 // Visual checkpoint #2.
