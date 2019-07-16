@@ -14,8 +14,7 @@
         [TestCase(1024, 768)]
         public void TestHelloWorld(int width, int height)
         {
-            //var eyes = new Eyes(new Uri(@"https://roiscripteyes.applitools.com"));
-            var eyes = new Eyes(new Uri(@"https://2d6aa1f9.ngrok.io"));
+            var eyes = new Eyes(new Uri(@"https://eyesfbaric3eyes.applitools.com"));
         
             var driver = GetWebDriver(); 
               
