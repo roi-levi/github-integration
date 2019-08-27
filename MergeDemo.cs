@@ -23,7 +23,7 @@
                 // Start the test and set the browser's viewport size
                 eyes.Open(driver, "Hello World!", "My first Selenium C# test!", new Size(width, height));
 
-                // Navigate the browser to the "hello world!" web-site.
+                // Navigate the browser to the "hello world!" web-site. 
                 driver.Url = "https://applitools.com/helloworld?diff1";
 
                 // Visual checkpoint #1.
